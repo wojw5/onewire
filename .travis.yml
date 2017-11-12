@@ -1,0 +1,12 @@
+sudo: false
+language: ruby
+os:
+  - linux
+  - osx
+rvm:
+  - 2.4.2
+  - ruby-head
+before_install: gem install bundler
+script:
+  - bundle install
+  - bundle exec rspec spec
